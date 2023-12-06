@@ -84,6 +84,6 @@ li:hover {
     background-color: darkred;
 }
 
-li.done {
+li.done > :first-child {
     text-decoration: line-through;
 }

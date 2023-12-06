@@ -1,0 +1,89 @@
+body {
+    font-family: sans-serif;
+    background-color: #252525;
+    margin: 0;
+}
+
+h1 {
+    color: #f9f9f9;
+    text-align: center;
+}
+
+.to-do-app {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"] {
+    padding: 5px;
+    margin-right: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: larger;
+}
+
+button {
+    padding: 10px;
+    background-color: rgb(15, 217, 15);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: darkgreen;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: #ccc;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li:hover {
+    background-color: gray;
+}
+
+.clear-button {
+    background-color: red;
+    margin: 20px;
+}
+
+.clear-button:hover {
+    background-color: darkred;
+}
+
+.button-list {
+    display: flex;
+}
+
+.delete-button {
+    background-color: red;
+    color: #fff;
+    border: none;
+    padding: 5px;
+    margin-left: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.delete-button:hover {
+    background-color: darkred;
+}
+
+li.done > font > font {
+    text-decoration: line-through;
+}

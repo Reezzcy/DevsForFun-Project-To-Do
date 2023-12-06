@@ -21,9 +21,8 @@ function markDoneTask(button) {
 }
 
 function removeTask(button) {
-    var div = button.parentNode.parentNode;
-    var li = div.parentNode;
-    li.parentNode.removeChild(li);
+    var li = button.closest("li");
+    li.remove();
 }
 
 function clearAll() {

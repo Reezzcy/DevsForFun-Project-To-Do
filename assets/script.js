@@ -4,9 +4,13 @@ function addTask() {
 
     if (taskInput.value.trim() !== "") {
         var li = document.createElement("li");
-        li.innerHTML = taskInput.value.trim() + 
-            '<div class="button-list"> <button class="done-button" onclick="markDoneTask(this)">Mark as Done</button> <button class="delete-button" onclick="removeTask(this)">Delete</button> </div>';
+        var taskText = document.createElement("p");
+
+        taskText.innerHTML = taskInput.value.trim();
+        li.appendChild(taskText)
+        li.innerHTML += '<div class="button-list"> <button class="done-button" onclick="markDoneTask(this)">Mark as Done</button> <button class="delete-button" onclick="removeTask(this)">Delete</button> </div>';
         taskList.appendChild(li);
+
         taskInput.value = "";
     }
 }
